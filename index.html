@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/platform-common-vendor.css" type="text/css" />
+    <link rel="stylesheet" href="/platform-common-ui.css" type="text/css" />
+    <link rel="stylesheet" href="/YOUR_PACKAGE_NAME.css" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js"></script>
+
+    <!--Uncomment below link only for dev purpose if NOT using ag-grid-react from platform-common-ui-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/13.1.0/styles/ag-grid.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/13.1.0/styles/theme-fresh.css" /> -->
+
+    <!--Below CDN is commented as its restricted now through OpemAM, hence it wont work on local untill valid token is prvided-->
+    <!-- <script src="https://control.dtitsupport247.net/js/ITS-GoogleAnalytics.js"></script> -->
+    <title>YOUR_PACKAGE_NAME</title>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      // ga('create', 'UA-70764085-2', 'auto');
+
+      function GoogleAnalyticsEnv(Env){
+
+        Env = Env.toUpperCase();
+
+        if (Env == "DT")
+        {
+          ga('create', 'UA-72149530-1', {'cookieDomain': 'auto', 'siteSpeedSampleRate': 100});
+          ga('send', 'pageview');
+        }
+        else if(Env == "PRE")
+        {
+          ga('create', 'UA-72128091-1', {'cookieDomain': 'auto', 'siteSpeedSampleRate': 100});
+          ga('send', 'pageview');
+        }
+        else if(Env == "LIVE")
+        {
+          ga('create', 'UA-73452054-1', {'cookieDomain': 'auto', 'siteSpeedSampleRate': 100});
+          ga('send', 'pageview');
+        }
+      }
+      GoogleAnalyticsEnv("DT")
+    </script>
+    
+    <script type="text/javascript">
+      if(!window._babelPolyfill) {
+          (function () {
+              var script = document.createElement('script');
+              script.src = 'https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js';
+              document.head.appendChild(script);
+          })();
+      }
+
+      window.RMM = {};
+      window.RMM.iPlanetDirectoryPro = 'AQIC5wM2LY4Sfcw7SOt3w8YV9znh7HRGrZBtK9GeRNYH-F4.*AAJTSQACMDEAAlNLABQtNTkyMDU4NjE5ODI5NjQxNTIwNgACUzEAAA..*';
+      function setDesktopGridHeight(){/*this function is actully call from parent page that is from qadashb portal*/};
+      function setAgGridStyle(){/*this function is actully call from parent page that is from qadashb portal*/};
+      function setDesktopGroupHeight(){/*this function is actully call from parent page that is from qadashb portal*/};
+      function setDgStyle(){/*this function is actully call from parent page that is from qadashb portal*/};
+    </script>
+
+  </head>
+  <body class="cn-body">
+    <div style="margin:auto">
+      <h1>Next Steps</h1>
+      <div id="root" class=""></div>
+    </div>
+    <script src="/YOURPROJECTNAME.vendor.js"></script>
+    <script src="/YOURPROJECTNAME.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+    env: {
+        development: {
+            presets: [
+                ["env", {
+                    targets: {
+                        browsers: ["last 2 versions", "ie >= 11"]
+                    },
+                    modules: false,
+                    useBuiltIns: true
+                }],
+                "react"
+            ]
+        },
+        test: {
+            presets: [
+                ["env", {
+                    targets: {
+                        browsers: ["last 2 versions", "ie >= 11"]
+                    },
+                    useBuiltIns: true
+                }],
+                "react"
+            ]
+        }
+    },
+    plugins: ["lodash", "transform-object-rest-spread", "dynamic-import-webpack",
+        [
+            "react-intl", {
+              "messagesDir": "./build/messages",
+              "enforceDescriptions": false
+            }
+        ]
+    ],
+    presets: [
+        ["env", {
+            targets: {
+                browsers: ["last 2 versions", "ie >= 11"]
+            },
+            modules: false,
+            useBuiltIns: true
+        }],
+        "react"
+    ]
+}
